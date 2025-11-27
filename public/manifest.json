@@ -1,0 +1,17 @@
+{
+  "name": "MedKey",
+  "short_name": "MedKey",
+  "description": "MedKey unifies lifetime medical history with FHIR connectivity and instant doctor sharing.",
+  "start_url": "/",
+  "background_color": "#0f2f6b",
+  "theme_color": "#0f2f6b",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ]
+}
+
