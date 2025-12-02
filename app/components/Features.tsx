@@ -7,9 +7,7 @@ import {
   UserCheck, 
   Network, 
   Shield, 
-  Smartphone,
-  CheckCircle2,
-  Radio
+  Smartphone
 } from 'lucide-react';
 
 const features = [
@@ -51,21 +49,6 @@ const features = [
   },
 ];
 
-const systems = [
-  { name: 'Epic', status: 'Connected' },
-  { name: 'Cerner', status: 'Connected' },
-  { name: 'Athena', status: 'Connected' },
-  { name: 'Azure FHIR', status: 'Syncing' },
-  { name: 'Telehealth', status: 'Syncing' },
-  { name: 'Clinics', status: 'Syncing' },
-];
-
-const shareSteps = [
-  'Patient initiates share',
-  'Digital consent verified',
-  'Doctor dashboard unlocked',
-];
-
 export default function Features() {
   return (
     <section id="features" className="py-20 bg-gradient-to-b from-white to-[#e0fbfc]">
@@ -104,7 +87,7 @@ export default function Features() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
@@ -137,112 +120,6 @@ export default function Features() {
             </motion.div>
           ))}
         </div>
-
-        {/* MedKey Control Graph */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="bg-gradient-to-br from-[#0066cc] to-[#00a8cc] rounded-3xl p-8 md:p-12 text-white overflow-hidden relative"
-        >
-          <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full blur-2xl"></div>
-          
-          <div className="relative z-10">
-            <div className="text-center mb-8">
-              <h3 className="text-3xl md:text-4xl font-bold mb-2">MedKey Control Graph</h3>
-              <p className="text-blue-100 text-lg">Live Interoperability Matrix</p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              {/* Systems Status */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <h4 className="text-lg font-semibold mb-4">System Status</h4>
-                <div className="space-y-3">
-                  {systems.map((system, index) => (
-                    <motion.div
-                      key={system.name}
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.1 }}
-                      className="flex items-center justify-between"
-                    >
-                      <span className="text-white font-medium">{system.name}</span>
-                      <div className="flex items-center gap-2">
-                        {system.status === 'Connected' ? (
-                          <>
-                            <CheckCircle2 className="w-4 h-4 text-green-300" />
-                            <span className="text-green-300 text-sm font-semibold">Connected</span>
-                          </>
-                        ) : (
-                          <>
-                            <Radio className="w-4 h-4 text-yellow-300 animate-pulse" />
-                            <span className="text-yellow-300 text-sm font-semibold">Syncing</span>
-                          </>
-                        )}
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Stats */}
-              <div className="space-y-4">
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                  <p className="text-sm text-blue-100 mb-1">FHIR endpoints certified</p>
-                  <p className="text-3xl font-bold">
-                    280+
-                    <span className="text-lg font-normal text-blue-100 ml-2">health systems online</span>
-                  </p>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                  <p className="text-sm text-blue-100 mb-1">Consent uptime</p>
-                  <p className="text-3xl font-bold">
-                    99.98%
-                    <span className="text-lg font-normal text-blue-100 ml-2">monitored reliability</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Share Pulse */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 mb-6">
-              <h4 className="text-lg font-semibold mb-4">Share pulse</h4>
-              <div className="space-y-3">
-                {shareSteps.map((step, index) => (
-                  <motion.div
-                    key={step}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    className="flex items-center gap-3"
-                  >
-                    <motion.div
-                      className="w-3 h-3 rounded-full bg-green-400"
-                      animate={{
-                        scale: [1, 1.4, 1],
-                        opacity: [0.6, 1, 0.6],
-                      }}
-                      transition={{
-                        duration: 1.5,
-                        repeat: Infinity,
-                        delay: index * 0.2,
-                      }}
-                    />
-                    <span className="text-white">{step}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-
-            <p className="text-center text-blue-100 text-lg max-w-3xl mx-auto">
-              MedKey orchestrates every step in real time, removing fax machines, CDs, and guesswork from modern care.
-            </p>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
