@@ -74,7 +74,6 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
           <p>&copy; {new Date().getFullYear()} MedKey. All rights reserved.</p>
-          <p className="mt-2">Developed by Rojan Upreti, Computer Science major at William Paterson University graduating in May 2026.</p>
         </div>
       </div>
     </footer>
