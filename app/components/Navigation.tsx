@@ -21,7 +21,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center gap-3">
             <Image
-              src="/logo.svg"
+              src="/medkey.png"
               alt="MedKey Logo"
               width={40}
               height={40}
