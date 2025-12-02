@@ -66,21 +66,6 @@ export default function CTA() {
               </motion.button>
             </div>
           </form>
-
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-blue-200">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-              <span>No credit card required</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-              <span>Free to join</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-              <span>Early access benefits</span>
-            </div>
-          </div>
         </motion.div>
       </div>
     </section>
