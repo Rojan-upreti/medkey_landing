@@ -1,0 +1,17 @@
+{
+  "name": "MedKey - Your Complete Medical History",
+  "short_name": "MedKey",
+  "description": "Unified healthcare platform that lets patients access their entire medical history and instantly share it with any doctor",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0F2F6B",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
+

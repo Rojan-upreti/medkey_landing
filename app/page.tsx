@@ -1,20 +1,27 @@
 import Navigation from './components/Navigation';
+import Hero from './components/Hero';
+import ProductPreview from './components/ProductPreview';
+import HowItWorks from './components/HowItWorks';
+import Features from './components/Features';
+import WhyMedKey from './components/WhyMedKey';
+import Security from './components/Security';
+import FAQ from './components/FAQ';
+import CTA from './components/CTA';
+import Footer from './components/Footer';
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Navigation />
-      <div className="pt-16 min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-green-50">
-        <div className="text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
-            MedKey Landing Page
-          </h1>
-          <p className="text-xl text-gray-600">
-            Your complete medical history in one place
-          </p>
-        </div>
-      </div>
+      <Hero />
+      <ProductPreview />
+      <HowItWorks />
+      <Features />
+      <WhyMedKey />
+      <Security />
+      <FAQ />
+      <CTA />
+      <Footer />
     </main>
   );
 }
-
