@@ -90,15 +90,15 @@ export default function ProductPreview() {
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: badge.delay, type: 'spring' }}
                 animate={{
                   y: [0, -10, 0],
                   x: [0, 5, 0],
                 }}
                 transition={{
+                  delay: badge.delay,
+                  type: 'spring',
                   duration: 3,
                   repeat: Infinity,
-                  delay: badge.delay,
                 }}
                 className="absolute z-20"
                 style={{

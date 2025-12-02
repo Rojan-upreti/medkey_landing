@@ -121,7 +121,7 @@ export default function CTA() {
                 className="mt-4 flex items-center justify-center gap-2 text-white bg-green-500/20 border border-green-300/30 rounded-full px-4 py-2 text-sm"
               >
                 <CheckCircle className="w-4 h-4" />
-                Successfully joined! Check your email for confirmation.
+                Successfully joined! We'll get back to you soon.
               </motion.div>
             )}
           </form>
