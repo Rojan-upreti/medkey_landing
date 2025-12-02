@@ -117,7 +117,7 @@ export default function WhyMedKey() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-16 text-center"
         >
-          <div className="bg-gradient-to-r from-[#0F2F6B] to-[#0FB5BA] rounded-2xl p-8 md:p-12 text-white">
+          <div className="bg-gradient-to-r from-[#0066cc] to-[#00a8cc] rounded-2xl p-8 md:p-12 text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Our Vision
             </h3>

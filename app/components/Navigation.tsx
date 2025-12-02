@@ -27,7 +27,7 @@ export default function Navigation() {
               height={40}
               className="w-10 h-10"
             />
-            <a href="#" className="text-2xl font-bold text-[#0F2F6B]">
+            <a href="#" className="text-2xl font-bold bg-gradient-to-r from-[#0066cc] to-[#00a8cc] bg-clip-text text-transparent">
               MedKey
             </a>
           </div>
@@ -38,14 +38,14 @@ export default function Navigation() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-[#0F2F6B] px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-700 hover:text-[#0066cc] px-3 py-2 text-sm font-medium transition-colors"
               >
                 {item.name}
               </a>
             ))}
             <a
               href="#cta"
-              className="bg-[#0F2F6B] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[#0FB5BA] transition-colors"
+              className="bg-gradient-to-r from-[#0066cc] to-[#00a8cc] text-white px-6 py-2 rounded-full text-sm font-medium hover:from-[#0052a3] hover:to-[#0088aa] transition-all shadow-md hover:shadow-lg"
             >
               Join Early Access
             </a>
@@ -78,7 +78,7 @@ export default function Navigation() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="block px-3 py-2 text-gray-700 hover:text-[#0F2F6B] hover:bg-gray-50 rounded-md text-base font-medium"
+                  className="block px-3 py-2 text-gray-700 hover:text-[#0066cc] hover:bg-gray-50 rounded-md text-base font-medium"
                 >
                   {item.name}
                 </a>
@@ -86,7 +86,7 @@ export default function Navigation() {
               <a
                 href="#cta"
                 onClick={() => setIsOpen(false)}
-                className="block bg-[#0F2F6B] text-white px-6 py-2 rounded-full text-center text-base font-medium hover:bg-[#0FB5BA] mt-4"
+                className="block bg-gradient-to-r from-[#0066cc] to-[#00a8cc] text-white px-6 py-2 rounded-full text-center text-base font-medium hover:from-[#0052a3] hover:to-[#0088aa] mt-4 shadow-md"
               >
                 Join Early Access
               </a>

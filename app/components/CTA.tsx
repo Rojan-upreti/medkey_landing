@@ -19,7 +19,7 @@ export default function CTA() {
   };
 
   return (
-    <section id="cta" className="py-20 bg-gradient-to-br from-[#0F2F6B] via-[#0FB5BA] to-[#4f6ed2]">
+    <section id="cta" className="py-20 bg-gradient-to-br from-[#0066cc] via-[#00a8cc] to-[#6366f1]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -50,7 +50,7 @@ export default function CTA() {
                 type="submit"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-white text-[#0F2F6B] px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-colors flex items-center justify-center gap-2 whitespace-nowrap"
+                className="bg-white text-[#0066cc] px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-colors flex items-center justify-center gap-2 whitespace-nowrap shadow-lg"
               >
                 {submitted ? (
                   <>

@@ -15,37 +15,37 @@ const features = [
     icon: History,
     title: 'Unified Lifetime Medical History',
     description: 'All records pulled from different systems into one clean interface.',
-    color: 'from-[#0F2F6B] to-[#123b88]',
+    color: 'from-[#0066cc] to-[#0052a3]',
   },
   {
     icon: Share2,
     title: 'Instant Sharing With Doctors',
     description: 'Just one tap + digital consent → secure provider access.',
-    color: 'from-[#0fb5ba] to-[#12c5c9]',
+    color: 'from-[#00a8cc] to-[#0088aa]',
   },
   {
     icon: UserCheck,
     title: 'Patient Owned Data',
     description: 'Patient controls who sees their data and for how long.',
-    color: 'from-[#4f6ed2] to-[#6d8bff]',
+    color: 'from-[#6366f1] to-[#818cf8]',
   },
   {
     icon: Network,
     title: 'FHIR-Based Interoperability',
     description: 'Built on the newest healthcare data standards.',
-    color: 'from-[#1e7fbf] to-[#33a6ff]',
+    color: 'from-[#0ea5e9] to-[#38bdf8]',
   },
   {
     icon: Shield,
     title: 'Secure & Encrypted by Design',
     description: 'HIPAA-conscious architecture with self-hosted AI.',
-    color: 'from-[#2a5c99] to-[#3d7bbd]',
+    color: 'from-[#0052a3] to-[#0066cc]',
   },
   {
     icon: Smartphone,
     title: 'Cross-Platform',
     description: 'Web + Mobile (iOS/Android) — simple login, simple sharing.',
-    color: 'from-[#0fb5ba] to-[#7cc4ff]',
+    color: 'from-[#00a8cc] to-[#06b6d4]',
   },
 ];
 

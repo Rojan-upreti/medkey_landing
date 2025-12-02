@@ -48,7 +48,7 @@ export default function Security() {
           className="text-center mb-16"
         >
           <div className="inline-flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full mb-6">
-            <Shield className="w-10 h-10 text-[#0F2F6B]" />
+            <Shield className="w-10 h-10 text-[#0066cc]" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Security & Privacy First
@@ -68,7 +68,7 @@ export default function Security() {
               transition={{ delay: index * 0.1, duration: 0.5 }}
               className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 border border-blue-100"
             >
-              <div className="w-12 h-12 bg-[#0F2F6B] rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-[#0066cc] to-[#00a8cc] rounded-lg flex items-center justify-center mb-4">
                 <feature.icon className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -86,7 +86,7 @@ export default function Security() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-gradient-to-r from-[#0F2F6B] to-[#0FB5BA] rounded-2xl p-8 md:p-12 text-white text-center"
+          className="bg-gradient-to-r from-[#0066cc] to-[#00a8cc] rounded-2xl p-8 md:p-12 text-white text-center"
         >
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
             Your Data, Your Control

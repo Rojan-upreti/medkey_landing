@@ -10,7 +10,7 @@ const steps = [
     title: 'Identity Login',
     description: 'Patient logs in using identity verification (OAuth, MyChart login, email/phone verification)',
     icon: User,
-    color: 'from-[#0F2F6B] to-[#123b88]',
+    color: 'from-[#0066cc] to-[#0052a3]',
     bgColor: 'bg-blue-50',
     borderColor: 'border-blue-200',
   },
@@ -19,7 +19,7 @@ const steps = [
     title: 'FHIR Connection',
     description: 'MedKey connects to major FHIR endpoints like Epic, Cerner, Allscripts, Azure API for FHIR, and more',
     icon: Link2,
-    color: 'from-[#0fb5ba] to-[#12c5c9]',
+    color: 'from-[#00a8cc] to-[#0088aa]',
     bgColor: 'bg-green-50',
     borderColor: 'border-green-200',
   },
@@ -28,7 +28,7 @@ const steps = [
     title: 'Fetch & Unify Records',
     description: 'Complete medical history is fetched: allergies, medications, diagnoses, lab results, imaging, and more',
     icon: Database,
-    color: 'from-[#4f6ed2] to-[#6d8bff]',
+    color: 'from-[#6366f1] to-[#818cf8]',
     bgColor: 'bg-purple-50',
     borderColor: 'border-purple-200',
   },
@@ -37,7 +37,7 @@ const steps = [
     title: 'Patient Views History',
     description: 'MedKey organizes everything into a timeline, summary dashboard, and easy-to-understand categories',
     icon: Eye,
-    color: 'from-[#1e7fbf] to-[#33a6ff]',
+    color: 'from-[#0ea5e9] to-[#38bdf8]',
     bgColor: 'bg-orange-50',
     borderColor: 'border-orange-200',
   },
@@ -46,7 +46,7 @@ const steps = [
     title: 'Share With Doctor',
     description: 'During a visit, patient taps "Share My Records" → signs consent → doctor instantly sees everything',
     icon: Share2,
-    color: 'from-[#0fb5ba] to-[#7cc4ff]',
+    color: 'from-[#00a8cc] to-[#06b6d4]',
     bgColor: 'bg-pink-50',
     borderColor: 'border-pink-200',
   },
@@ -85,7 +85,7 @@ export default function HowItWorks() {
           <div className="absolute top-32 left-0 right-0 h-1 bg-gray-200 rounded-full overflow-hidden">
             <motion.div
               style={{ width: progress }}
-              className="h-full bg-gradient-to-r from-[#0F2F6B] via-[#0fb5ba] via-[#4f6ed2] via-[#1e7fbf] to-[#0fb5ba] rounded-full"
+              className="h-full bg-gradient-to-r from-[#0066cc] via-[#00a8cc] via-[#6366f1] via-[#0ea5e9] to-[#00a8cc] rounded-full"
             />
           </div>
 
@@ -178,11 +178,11 @@ export default function HowItWorks() {
                         className="absolute top-4 right-4"
                       >
                         <CheckCircle2 className={`w-6 h-6 ${
-                          step.color.includes('blue') ? 'text-[#0F2F6B]' :
-                          step.color.includes('green') ? 'text-[#0fb5ba]' :
-                          step.color.includes('purple') ? 'text-[#4f6ed2]' :
-                          step.color.includes('orange') ? 'text-[#1e7fbf]' :
-                          'text-[#0fb5ba]'
+                          step.color.includes('0066cc') ? 'text-[#0066cc]' :
+                          step.color.includes('00a8cc') ? 'text-[#00a8cc]' :
+                          step.color.includes('6366f1') ? 'text-[#6366f1]' :
+                          step.color.includes('0ea5e9') ? 'text-[#0ea5e9]' :
+                          'text-[#00a8cc]'
                         }`} />
                       </motion.div>
                     </div>
@@ -199,7 +199,7 @@ export default function HowItWorks() {
           <div className="absolute left-8 top-0 bottom-0 w-1 bg-gray-200 rounded-full">
             <motion.div
               style={{ height: progress }}
-              className="w-full bg-gradient-to-b from-[#0F2F6B] via-[#0fb5ba] via-[#4f6ed2] via-[#1e7fbf] to-[#0fb5ba] rounded-full"
+              className="w-full bg-gradient-to-b from-[#0066cc] via-[#00a8cc] via-[#6366f1] via-[#0ea5e9] to-[#00a8cc] rounded-full"
             />
           </div>
 

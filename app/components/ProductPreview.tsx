@@ -109,7 +109,7 @@ export default function ProductPreview() {
                 <div className="bg-white rounded-xl px-4 py-2 shadow-lg border border-gray-200 flex items-center gap-2">
                   {(() => {
                     const IconComponent = badge.icon;
-                    return <IconComponent className="w-4 h-4 text-[#0F2F6B]" />;
+                    return <IconComponent className="w-4 h-4 text-[#0066cc]" />;
                   })()}
                   <span className="text-sm font-medium text-gray-700">{badge.text}</span>
                 </div>
@@ -123,7 +123,7 @@ export default function ProductPreview() {
               {/* Screen */}
               <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden relative">
                 {/* Status Bar */}
-                <div className="h-8 bg-gradient-to-r from-[#0F2F6B] to-[#0FB5BA] flex items-center justify-between px-6 text-white text-xs font-medium">
+                <div className="h-8 bg-gradient-to-r from-[#0066cc] to-[#00a8cc] flex items-center justify-between px-6 text-white text-xs font-medium">
                   <span>9:41</span>
                   <div className="flex items-center gap-1">
                     <div className="w-4 h-2 border border-white rounded-sm">
@@ -182,7 +182,7 @@ export default function ProductPreview() {
                           <div
                             key={index}
                             className={`w-2 h-2 rounded-full ${
-                              index === currentScreen ? 'bg-[#0F2F6B]' : 'bg-gray-300'
+                              index === currentScreen ? 'bg-[#0066cc]' : 'bg-gray-300'
                             }`}
                           ></div>
                         ))}
@@ -205,13 +205,13 @@ export default function ProductPreview() {
                 transition={{ delay: index * 0.1, duration: 0.5 }}
                 className={`p-6 rounded-xl border-2 transition-all ${
                   index === currentScreen
-                    ? 'border-[#0F2F6B] bg-blue-50 shadow-lg'
+                    ? 'border-[#0066cc] bg-blue-50 shadow-lg'
                     : 'border-gray-200 bg-white'
                 }`}
               >
                 <div className="flex items-start gap-4">
                   <div className={`p-3 rounded-lg ${
-                    index === currentScreen ? 'bg-[#0F2F6B]' : 'bg-gray-100'
+                    index === currentScreen ? 'bg-gradient-to-br from-[#0066cc] to-[#00a8cc]' : 'bg-gray-100'
                   }`}>
                     {(() => {
                       const IconComponent = screen.icon;
