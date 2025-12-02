@@ -1,13 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f6f8fb;
-  --foreground: #0f1f3d;
-  --primary-navy: #0f2f6b;
-  --primary-teal: #0fb5ba;
-  --accent-sky: #7cc4ff;
-  --card: #ffffff;
-  --muted: #e4ecf7;
+  --background: #ffffff;
+  --foreground: #1e293b;
+  --primary-blue: #0F2F6B;
+  --primary-blue-light: #0FB5BA;
+  --medical-green: #10b981;
 }
 
 @theme inline {
@@ -25,3 +23,4 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
