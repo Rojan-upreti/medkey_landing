@@ -27,10 +27,10 @@ export default function CTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
             Become an Early User
           </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white mb-8 max-w-2xl mx-auto drop-shadow-md opacity-95">
             Join MedKey and be among the first to take control of your complete medical history. Get early access to our platform and help shape the future of healthcare data.
           </p>
 
