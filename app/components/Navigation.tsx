@@ -55,7 +55,7 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-[#0F2F6B]"
+              className="text-gray-700 hover:text-[#0066cc]"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
