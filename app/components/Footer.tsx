@@ -14,9 +14,11 @@ export default function Footer() {
               <Image
                 src="/medkey.png"
                 alt="MedKey Logo"
-                width={40}
-                height={40}
-                className="w-10 h-10"
+                width={48}
+                height={48}
+                className="w-12 h-12 object-contain drop-shadow-sm"
+                quality={100}
+                unoptimized
               />
               <h3 className="text-2xl font-bold text-white">MedKey</h3>
             </div>

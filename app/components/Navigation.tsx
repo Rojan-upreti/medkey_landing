@@ -23,9 +23,12 @@ export default function Navigation() {
             <Image
               src="/medkey.png"
               alt="MedKey Logo"
-              width={40}
-              height={40}
-              className="w-10 h-10"
+              width={48}
+              height={48}
+              className="w-12 h-12 object-contain drop-shadow-sm"
+              quality={100}
+              priority
+              unoptimized
             />
             <a href="#" className="text-2xl font-bold bg-gradient-to-r from-[#0066cc] to-[#00a8cc] bg-clip-text text-transparent">
               MedKey
