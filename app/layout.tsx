@@ -36,8 +36,9 @@ export const metadata: Metadata = {
   applicationName: "MedKey",
   category: "Healthcare Technology",
   icons: {
-    icon: '/logo.svg',
-    apple: '/logo.svg',
+    icon: '/medkey.jpeg',
+    apple: '/medkey.jpeg',
+    shortcut: '/medkey.jpeg',
   },
   manifest: '/manifest.json',
   openGraph: {
@@ -91,9 +92,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta name="developed-by" content="Rojan Upreti, Computer Science major at William Paterson University graduating in May 2026" />
-      </head>
       <body
         suppressHydrationWarning
         className={`${inter.variable} font-sans antialiased`}

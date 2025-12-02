@@ -8,6 +8,12 @@
   "theme_color": "#0F2F6B",
   "icons": [
     {
+      "src": "/medkey.jpeg",
+      "sizes": "581x659",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
       "src": "/logo.svg",
       "sizes": "any",
       "type": "image/svg+xml"
