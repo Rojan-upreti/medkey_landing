@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Navigation() {
@@ -19,17 +18,7 @@ export default function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0 flex items-center gap-3">
-            <Image
-              src="/medkey.png"
-              alt="MedKey Logo"
-              width={48}
-              height={48}
-              className="w-12 h-12 object-contain drop-shadow-sm"
-              quality={100}
-              priority
-              unoptimized
-            />
+          <div className="flex-shrink-0">
             <a href="#" className="text-2xl font-bold bg-gradient-to-r from-[#0066cc] to-[#00a8cc] bg-clip-text text-transparent">
               MedKey
             </a>
