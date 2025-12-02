@@ -36,9 +36,12 @@ export const metadata: Metadata = {
   applicationName: "MedKey",
   category: "Healthcare Technology",
   icons: {
-    icon: '/medkey.jpeg',
-    apple: '/medkey.jpeg',
-    shortcut: '/medkey.jpeg',
+    icon: [
+      { url: '/medkey.png', sizes: 'any' },
+      { url: '/medkey.png', type: 'image/png' },
+    ],
+    apple: '/medkey.png',
+    shortcut: '/medkey.png',
   },
   manifest: '/manifest.json',
   openGraph: {
@@ -50,7 +53,7 @@ export const metadata: Metadata = {
     description: 'Unified healthcare platform that lets patients access their entire medical history and instantly share it with any doctor using digital consent and FHIR interoperability.',
     images: [
       {
-        url: '/logo.svg',
+        url: '/medkey.png',
         width: 512,
         height: 512,
         alt: 'MedKey Logo',
@@ -61,7 +64,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'MedKey - Your Complete Medical History in One Place',
     description: 'Unified healthcare platform for accessing and sharing medical records.',
-    images: ['/logo.svg'],
+    images: ['/medkey.png'],
   },
   robots: {
     index: true,
@@ -92,6 +95,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="developed-by" content="Rojan Upreti, Computer Science major at William Paterson University graduating in May 2026" />
+      </head>
       <body
         suppressHydrationWarning
         className={`${inter.variable} font-sans antialiased`}

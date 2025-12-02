@@ -5,18 +5,12 @@
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0F2F6B",
+  "theme_color": "#0066cc",
   "icons": [
     {
-      "src": "/medkey.jpeg",
-      "sizes": "581x659",
-      "type": "image/jpeg",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/logo.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
+      "src": "/medkey.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }
