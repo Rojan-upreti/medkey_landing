@@ -61,7 +61,7 @@ export default function Hero() {
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="https://medkey.rojanupreti.com"
+              href="https://demo.medkey.health"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:text-[#0066cc] transition-colors border border-gray-200 hover:border-[#0066cc]/30"
